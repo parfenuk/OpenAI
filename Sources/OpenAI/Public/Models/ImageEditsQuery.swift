@@ -113,7 +113,7 @@ extension ImageEditsQuery: MultipartFormDataBodyEncodable {
             .string(paramName: "user", value: user),
             .string(paramName: "prompt", value: prompt),
             .string(paramName: "n", value: n),
-            .string(paramName: "size", value: size),
+            .string(paramName: "size", value: size?.rawValue),
             .string(paramName: "quality", value: quality?.rawValue)
         ]
 
